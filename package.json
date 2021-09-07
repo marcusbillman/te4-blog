@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/marcusbillman/11ty-blog/issues"
   },
-  "homepage": "https://github.com/marcusbillman/11ty-blog#readme"
+  "homepage": "https://github.com/marcusbillman/11ty-blog#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
