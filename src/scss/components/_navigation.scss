@@ -1,0 +1,11 @@
+nav {
+  width: 100%;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+  }
+}
