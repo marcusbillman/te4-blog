@@ -1,5 +1,7 @@
 ---
 title: Getting started with Eleventy
+subtitle: Creating a simple blog using Eleventy, Nunjucks and Sass.
+date: 2021-09-08
 ---
 
 {% raw %}
