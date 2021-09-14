@@ -1,6 +1,6 @@
 ---
+layout: layouts/blog.njk
 title: Blog
-layout: blog.njk
 ---
 
 ## All posts
