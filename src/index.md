@@ -1,8 +1,6 @@
 ---
-layout: layouts/base.njk
-title: Very cool yes
+layout: layouts/blog.njk
+title: Blog
 ---
 
-# Now with extra src!
-
-Epic content right here.
+## All posts
