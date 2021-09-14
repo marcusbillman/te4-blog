@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>{{ title }}</h1>
+<p>{{ meta.authorName }} on {{ date | formattedDate }}</p>
+
+{{ content | safe }}

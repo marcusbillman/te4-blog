@@ -3,20 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 $modularscale: (
-  base: 16px,
+  base: 1.2rem,
   ratio: $fourth,
 );
 
 body {
-  line-height: 1.5;
+  line-height: 1.7;
   font-family: 'Manrope', sans-serif;
-  font-weight: 400;
+  font-size: ms(0);
 }
 
 h1,
 h2,
 h3 {
   font-weight: 700;
+  line-height: 1.4;
+  + p {
+    margin-top: 0.8em;
+  }
 }
 
 h1 {
@@ -29,4 +33,11 @@ h2 {
 
 h3 {
   font-size: ms(1);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 1.5em;
 }

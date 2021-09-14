@@ -1,5 +1,7 @@
 ---
 title: Getting started with Eleventy
+subtitle: Creating a simple blog using Eleventy, Nunjucks and Sass.
+date: 2021-09-08
 ---
 
 {% raw %}
@@ -154,7 +156,7 @@ As you can see, there are other globally accessible variables that Eleventy can 
 
 So far, we've got a base layout that uses a navbar and footer component, but if you check your browser again, we're still just seeing that dummy content from `index.md`. Let's change that by actually using our base layout on the home page. Open up `index.md` and enter the following:
 
-```
+```plaintext
 ---
 layout: base.njk
 title: Home
@@ -171,7 +173,7 @@ The lines in between the triple dashes make up the so-called front matter. This 
 
 Okay, now we have a home page, but this is supposed to be a blog, so let's create a `blog.md` file inside the `src` directory. This file (or rather, an HTML document based on this file) will be served at `localhost:8080/blog`. We'll put this inside the `blog.md` file:
 
-```
+```plaintext
 ---
 title: Blog
 layout: blog.njk
@@ -182,7 +184,7 @@ layout: blog.njk
 
 The blog page will use its own layout from the file `src/_includes/blog.njk`. Put the following inside that file:
 
-```
+```plaintext
 ---
 layout: "base.njk"
 title: "All posts"
@@ -226,7 +228,7 @@ This will make it so that all pages in the `blog` directory will automatically g
 
 Now we're finally ready to add our first actual blog post. I'll create a `hello-world.md` file inside `blog` and write a little Markdown post in there.
 
-```
+```plaintext
 ---
 title: Hello world!
 ---

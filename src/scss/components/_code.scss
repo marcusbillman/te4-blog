@@ -1,0 +1,16 @@
+@import url(https://unpkg.com/prismjs@1.24.1/themes/prism-tomorrow.css);
+
+pre {
+  border-radius: 8px;
+}
+
+p + pre {
+  margin: 1.5em 0 !important;
+}
+
+code {
+  background: #eeeeee;
+  border-radius: 4px;
+  word-wrap: break-word;
+  padding: 0 0.3em;
+}
