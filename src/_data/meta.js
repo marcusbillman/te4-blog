@@ -1,6 +1,11 @@
 module.exports = {
-  siteTitle: 'billman.tech',
+  url: process.env.URL || 'http://localhost:8080',
+  title: 'billman.tech',
   description: 'Experimental tech blog',
-  authorName: 'Marcus Billman',
-  authorEmail: 'hello@marcusbillman.com',
+  author: {
+    name: 'Marcus Billman',
+    email: 'hello@marcusbillman.com',
+    github: 'marcusbillman',
+  },
+  updated: Date.now(),
 };
