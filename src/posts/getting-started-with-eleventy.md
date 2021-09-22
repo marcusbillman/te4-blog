@@ -69,9 +69,9 @@ Now let's add the site's title, your name and your email as metadata that can be
 
 ```json
 {
-  "siteTitle": "My awesome blog",
-  "authorName": "Marcus Billman",
-  "authorEmail": "hello@marcusbillman.com"
+  "title": "My awesome blog",
+  "author.name": "Marcus Billman",
+  "author.email": "hello@marcusbillman.com"
 }
 ```
 
@@ -86,7 +86,7 @@ Create the directory `src/_includes` and inside, create `base.njk`. This will be
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ meta.siteTitle }}</title>
+    <title>{{ meta.title }}</title>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
@@ -97,7 +97,7 @@ Create the directory `src/_includes` and inside, create `base.njk`. This will be
 </html>
 ```
 
-`meta.siteTitle` comes from the `meta.json` file we just created. `{{ content | safe }}` will be replaced with the contents of any file that extends from this base layout. We'll worry about the stylesheet later on. As you can see, `base.njk` also includes two reusable components: a navbar at `src/_includes/components/navigation.njk` and a footer at `src/_includes/components/footer.njk`. We'll need to create both of those files.
+`meta.title` comes from the `meta.json` file we just created. `{{ content | safe }}` will be replaced with the contents of any file that extends from this base layout. We'll worry about the stylesheet later on. As you can see, `base.njk` also includes two reusable components: a navbar at `src/_includes/components/navigation.njk` and a footer at `src/_includes/components/footer.njk`. We'll need to create both of those files.
 
 We'll start with the navbar. In order to keep a single source of truth, let's create a file called `navigation.json` inside `src/_data`. This file will hold our list of pages that the navbar can pull from:
 
@@ -140,9 +140,9 @@ For the footer, we'll write this markup inside `src/_includes/components/footer.
 <footer class="container">
   <p>
     This page is created by
-    <a href="mailto:{{meta.authorEmail}}">{{meta.authorName}}</a>.
+    <a href="mailto:{{meta.author.email}}">{{meta.author.name}}</a>.
   </p>
-  <p>All text and content &copy; {{meta.authorName}}.</p>
+  <p>All text and content &copy; {{meta.author.name}}.</p>
   <p>
     This is version {{ pkg.version }} of this site and the source is available
     on <a href="{{ pkg.homepage }}">GitHub</a>.
