@@ -1,0 +1,47 @@
+@use '../utilities/colors';
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  &__heading {
+    width: 100%;
+    font-size: clamp(3.2rem, 7vw, 10rem);
+    span {
+      display: block;
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+  &__experimental {
+    font-style: italic;
+    &::after {
+      content: ' *';
+      color: colors.$tech-green;
+    }
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    background: colors.$tech-green;
+    border-radius: 1000px;
+    opacity: 40%;
+    filter: blur(clamp(50px, 15vw, 200px));
+    z-index: -1;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+  }
+}
