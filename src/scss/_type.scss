@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
   line-height: 1.7;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 
 h1,
@@ -16,9 +16,11 @@ h3 {
 }
 
 h1 {
+  font-weight: 400;
 }
 
 h2 {
+  font-size: clamp(2.4rem, 3vw, 3.2rem);
 }
 
 h3 {
