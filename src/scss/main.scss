@@ -1,9 +1,17 @@
 @use 'reset';
 @use 'type';
 
+@use 'utilities/colors';
 @use 'utilities/container';
 
 @use 'components/code';
 @use 'components/footer';
-@use 'components/link';
+@use 'components/hero';
 @use 'components/navigation';
+@use 'components/post-list';
+
+body {
+  background: colors.$almost-black;
+  color: colors.$actually-white;
+  overflow-x: hidden;
+}
