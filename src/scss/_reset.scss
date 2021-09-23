@@ -73,3 +73,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Set base font size to make px to rem conversion simple */
+html {
+  font-size: 62.5%;
+}
