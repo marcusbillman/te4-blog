@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 4.8rem;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
