@@ -1,0 +1,11 @@
+@use '../utilities/colors';
+
+.button {
+  width: max-content;
+  color: colors.$tech-green;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba($color: white, $alpha: 0.2);
+  border-radius: 1000px;
+  padding: 1.6rem 3.2rem;
+}
