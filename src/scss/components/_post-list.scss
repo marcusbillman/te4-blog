@@ -1,0 +1,35 @@
+@use '../utilities/colors';
+
+.posts {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .post {
+    padding-bottom: 4.8rem;
+    border-bottom: 1px solid rgba($color: white, $alpha: 0.2);
+    &__link {
+      text-decoration: none;
+    }
+    &__date {
+      color: colors.$tech-green;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    &__title {
+      font-size: 2.4rem;
+      text-decoration: underline;
+      margin: 0;
+    }
+    &__subtitle {
+      margin-top: 1.6rem;
+    }
+  }
+}
