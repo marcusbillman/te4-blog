@@ -3,6 +3,8 @@
 body {
   line-height: 1.7;
   font-family: 'Space Mono', monospace;
+  font-size: 1.6rem;
+  font-variant-ligatures: contextual;
 }
 
 h1,
@@ -30,7 +32,6 @@ h1,
 h2,
 h3,
 p {
-  font-size: 1.6rem;
   margin-top: 1.5em;
 }
 
