@@ -1,11 +1,16 @@
 {% if navigation.items %}
-  <nav>
-    <ul>
-      {% for item in navigation.items %}
-        <li>
-          <a href="{{ item.url }}">{{ item.text }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <nav class="navbar">
+    <div class="navbar__container container">
+      <a class="navbar__logo-link" href="/">billman.tech</a>
+      <ul class="navbar__links">
+        {% for item in navigation.items %}
+          <li>
+            <a class="navbar__link" href="{{ item.url }}">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a class="navbar__website-link" href="https://marcusbillman.com/">marcusbillman.com -></a>
+      <a class="navbar__menu-link" id="menuButton" href="#">menu =</a>
+    </div>
   </nav>
 {% endif %}

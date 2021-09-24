@@ -1,11 +1,35 @@
-nav {
-  width: 100%;
-  background: #eeeeee;
-  display: flex;
-  justify-content: center;
-  ul {
+.navbar {
+  &__container {
     display: flex;
-    gap: 1em;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+    font-weight: 700;
+  }
+  &__logo-link {
+    text-decoration: none;
+  }
+  &__website-link {
+    display: none;
+    text-decoration: none;
+  }
+  &__links {
+    display: none;
+    gap: 3.2rem;
     list-style: none;
+  }
+  &__menu-link {
+    display: inline-block;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 50rem) {
+    &__links {
+      display: flex;
+    }
+    &__menu-link {
+      display: none;
+    }
+    &__website-link {
+      display: inline-block;
+    }
   }
 }
