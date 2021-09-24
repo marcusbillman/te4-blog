@@ -1,9 +1,19 @@
 <footer class="footer">
   <div class="footer__container container">
-    <p>This page is created by
-      <a href="mailto:{{meta.author.email}}">{{meta.author.name}}</a>.</p>
-    <p>All text and content &copy; {{meta.author.name}}.</p>
-    <p>This is version {{ pkg.version }} of this site and the source is available on
-      <a href="{{ pkg.homepage }}">GitHub</a>.</p>
+    <nav class="footer__nav">
+      <a class="footer__logo-link" href="/">billman.tech</a>
+      <ul class="footer__links">
+        {% for item in navigation.items %}
+          <li>
+            <a class="footer__link" href="{{ item.url }}">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a class="footer__website-link" href="https://marcusbillman.com/">marcusbillman.com -></a>
+    </nav>
+    <div class="footer__fineprint">
+      <p>Text and content &copy; {{meta.author.name}}</p>
+      <a class="footer__source-link" href="{{ pkg.homepage }}">Site source on GitHub -></a>
+    </div>
   </div>
 </footer>
